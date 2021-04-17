@@ -25,7 +25,7 @@ register_cmd("age", function(cmd) {
 });
 
 register_cmd("interests", function(cmd) {
-	block_log("I have a lot");
+	block_log("brb");
 });
 
 
