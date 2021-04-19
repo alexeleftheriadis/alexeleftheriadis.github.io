@@ -68,7 +68,7 @@ register_cmd("ls", function(cmd) {
 });
 
 register_cmd("cat", function(cmd) {
-    const parameters = cmd.split(" ").slice(1);
+    var parameters = cmd.split(" ").slice(1);
     if(parameters=="about_me.txt"){
         result="I am a MSc physicist with interest in programming and data analysis. A continuous learner that constantly trying to stay up-to-date with the latest technologies." 
         block_log(result);   
@@ -80,13 +80,24 @@ register_cmd("cat", function(cmd) {
         block_log(result);
         block_log(result2);
         block_log(result3);
+        block_log(" ");
     }
-    /*else if (parameters="skills.txt"){
-
-
+    else if (parameters="skills.txt"){
+        result4="My currently programming skills are on C/C++, Python and Javascript. Also i am familliar using relational and no-relationala Databases (MySQL, InfluxDB and MongoDb) and vizualisation platforms like Tableau and Grafana."
+        block_log(result4);  
     }
-
-*/
+    else if (parameters="education.txt"){
+        result5="I got my BSc of Physics in Aristotle University of Thessaloniki when i realised my passion on programming. After that i decided to develope my skills by taking MSc in Computational Physics, where i was able to learn new things and technologies. Also i got some great expierence contibuting to team projects."
+        block_log(result5);  
+    }
+    else if (parameters="github.txt"){
+        result6="https://github.com/alexeleftheriadis"
+        block_log(result6);  
+    }
+    else if (parameters="interests.txt"){
+        result6="On my free time i love cycling, reading books, gaming, dealing with arduino and raspberry projects. Also at this time i am doing some first steps on pen-testing"
+        block_log(result6);  
+    }   
   //   block_log(result);
      
 });
