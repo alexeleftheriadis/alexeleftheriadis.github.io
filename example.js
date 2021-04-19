@@ -95,10 +95,10 @@ register_cmd("cat", function(cmd) {
         block_log(result6);  
     }
     else if (parameters=="interests.txt"){
-        result6="On my free time i love cycling, reading books, gaming, dealing with arduino and raspberry projects. Also at this time i am doing some first steps on pen-testing."
-        block_log(result6);  
+        result7="On my free time i love cycling, reading books, gaming, dealing with arduino and raspberry projects. Also at this time i am doing some first steps on pen-testing."
+        block_log(result7);  
     }   
-  //   block_log(result);
+
      
 });
 
