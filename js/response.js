@@ -1,25 +1,7 @@
 log("Welcome to my resume!");
 log("Type 'help' for help" )
 
-// Example Command - Hey
 
-register_cmd("hey", function(cmd) {
-    var parameters = cmd.split(" ").slice(1);
-    for (var i = 0; i < parameters.length; i++) {
-        block_log("Hello " + parameters[i]);
-    }
-});
-
-// Example Command - Sum
-
-
-register_cmd("age", function(cmd) {
-	block_log("My age is 29");
-});
-
-register_cmd("interests", function(cmd) {
-	block_log("brb");
-});
 
 
 register_cmd("help", function(cmd) {
@@ -31,6 +13,7 @@ register_cmd("help", function(cmd) {
     block_log("help - print this menu.");
     block_log("date - Print the system's date and time");
 });
+
 
 register_cmd("clear", function(cmd) {
     window.location.reload(true);
@@ -98,11 +81,11 @@ register_cmd("cat", function(cmd) {
         result7="On my free time i love cycling, reading books, gaming, dealing with arduino and raspberry projects. Also at this time i am doing some first steps on pen-testing."
         block_log(result7);  
     }   
-
-     
 });
 
 
-
+register_cmd("age", function(cmd) {
+	block_log("My age is 29");
+});
 
 update_user_title("guest@aelevthe:");
